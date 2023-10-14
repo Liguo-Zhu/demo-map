@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- my styles css -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <nav
+      class="d-flex justify-content-between align-items-center bg-success text-white"
+    >
+      <h1 class="px-3">TRAVEL ADVISOR</h1>
+      <div class="px-1 pageCounter">
+        Page View Counter:
+        <span id="pageCounter"></span>
+      </div>
+    </nav>
+
+    <!-- display weather and restaurants information -->
+    <div class="d-flex">
+      <div id="map"></div>
+      <div class="col">
+        <!-- enter a location -->
+        <div
+          id="pac-container"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <input
+            id="pac-input"
+            type="text"
+            placeholder="Search Your Location"
+          />
+        </div>
+        <hr />
+        <h4>Weather</h4>
+        <div id="weather"></div>
+        <hr />
+        <h4>Restaurants Rating <span>(Pink Number)</span></h4>
+        <div id="restaurants" class="row"></div>
+        <hr />
+        <h4>Attractions Rating <span>(Black Number)</span></h4>
+        <div id="attractions" class="row"></div>
+        <hr />
+      </div>
+      <div id="infowindow-content">
+        <span id="place-name" class="title"></span><br />
+        <span id="place-address"></span>
+      </div>
+    </div>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Google Maps JavaScript API & Google Places Autocomplete Service -->
+    <!-- Replace "your-key" with your Google key-->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=your-key&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <!-- my javascript: map.js -->
+    <script src="javascripts/map.js"></script>
+  </body>
+</html>

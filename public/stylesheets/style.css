@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Lora&family=Noto+Serif&family=Noto+Serif+Tangut&family=Nova+Mono&family=Qwigley&family=Raleway&family=Roboto&family=Ubuntu+Mono&display=swap");
+
+#map {
+  height: 92vh;
+  width: 68vw;
+  margin-right: 10px;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#description {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+#pac-container {
+  padding-top: 13px;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  width: 400px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 6px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pageCounter {
+  width: 210px;
+}
+
+a {
+  text-decoration: none;
+}
+/* unvisited link */
+/* a:link {
+  color: green;
+} */
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
